@@ -1,6 +1,6 @@
 %define	module	Log-Log4perl
 %define	name	perl-%{module}
-%define version 1.12
+%define version 1.13
 %define release %mkrel 1
 
 %define _requires_exceptions perl\(Log::Dispatch::FileRotate\)
