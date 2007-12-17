@@ -19,7 +19,6 @@ Buildrequires:	perl-devel
 %endif
 BuildRequires:	perl-Log-Dispatch >= 2.00
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 %{module} module for perl.  It provides a powerful logging API to your
