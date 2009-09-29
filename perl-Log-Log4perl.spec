@@ -1,5 +1,5 @@
 %define	upstream_name	 Log-Log4perl
-%define upstream_version 1.24
+%define upstream_version 1.25
 
 %define _requires_exceptions perl\(Log::Dispatch::FileRotate\)
 
@@ -11,7 +11,7 @@ Summary:	Log4j implementation for Perl
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Log/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://www.cpan.org/modules/by-module/Log/%{upstream_name}-%{upstream_version}.tar.gz
 
 %if %{mdkversion} < 1010
 Buildrequires:	perl-devel
@@ -48,6 +48,7 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %doc Changes LICENSE README xml eg
+%{_bindir}/l4p-tmpl
 %{perl_vendorlib}/Log
+%{_mandir}/man1/*
 %{_mandir}/man3/*
-
