@@ -1,11 +1,11 @@
 %define	upstream_name	 Log-Log4perl
 %define upstream_version 1.31
 
-%define _requires_exceptions perl\(Log::Dispatch::FileRotate\)
+%define _requires_exceptions perl\(\\(Log::Dispatch::FileRotate\\|DBI\\|RRDs\\)\)
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	Log4j implementation for Perl
 License:	GPL+ or Artistic
 Group:		Development/Perl
