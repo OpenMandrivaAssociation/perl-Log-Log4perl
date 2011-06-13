@@ -1,5 +1,5 @@
 %define	upstream_name	 Log-Log4perl
-%define upstream_version 1.32
+%define upstream_version 1.33
 
 %define _requires_exceptions perl\(\\(Log::Dispatch::FileRotate\\|DBI\\|RRDs\\)\)
 
