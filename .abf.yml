@@ -1,2 +1,4 @@
+removed_sources:
+  Log-Log4perl-1.33.tar.gz: d9ed3fdbff058f7ccc79072cbcfa66f1a193740a
 sources:
-  "Log-Log4perl-1.33.tar.gz": d9ed3fdbff058f7ccc79072cbcfa66f1a193740a
+  Log-Log4perl-1.41.tar.gz: 2102d9c3cb679a78084e14e26e68828b58420c57
