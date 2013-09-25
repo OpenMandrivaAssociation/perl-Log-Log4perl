@@ -1,5 +1,5 @@
 %define	upstream_name	 Log-Log4perl
-%define upstream_version 1.41
+%define upstream_version 1.42
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(Sysadm::Install\\)|perl\\(Log::Dispatch::FileRotate\\)|perl\\(DBI(.*)\\)|perl\\(RRDs(.*)\\)'
@@ -8,13 +8,13 @@
 %endif
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 1.41
+Version:	%perl_convert_version %{upstream_version}
 Release:	1
 Summary:	Log4j implementation for Perl
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Log/Log-Log4perl-1.41.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Log/Log-Log4perl-%{upstream_version}.tar.gz
 BuildRequires:	perl-devel
 BuildRequires:	perl-Log-Dispatch >= 2.00
 BuildArch:	noarch
@@ -209,5 +209,6 @@ Import perl-Log-Log4perl
 * Wed Jan 14 2004 Lenny Cartier <lenny@mandrakesoft.com> 0.30-4mdk
 - rebuild
 - remove dependencies on perl(devel) modules
+
 
 
