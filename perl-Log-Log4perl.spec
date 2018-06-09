@@ -20,6 +20,7 @@ BuildRequires:	perl-devel
 BuildRequires:	perl-Log-Dispatch >= 2.00
 BuildArch:	noarch
 Requires:	perl-Log-Dispatch >= 2.00
+BuildRequires:	perl(Test)
 BuildRequires:	perl(Test::More)
 
 %description
