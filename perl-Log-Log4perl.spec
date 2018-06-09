@@ -1,5 +1,5 @@
 %define	upstream_name	 Log-Log4perl
-%define upstream_version 1.44
+%define upstream_version 1.49
 
 %if %{_use_internal_dependency_generator}
 %define __noautoreq 'perl\\(Sysadm::Install\\)|perl\\(Log::Dispatch::FileRotate\\)|perl\\(DBI(.*)\\)|perl\\(RRDs(.*)\\)'
@@ -9,7 +9,7 @@
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 Summary:	Log4j implementation for Perl
 
 License:	GPL+ or Artistic
@@ -20,6 +20,7 @@ BuildRequires:	perl-devel
 BuildRequires:	perl-Log-Dispatch >= 2.00
 BuildArch:	noarch
 Requires:	perl-Log-Dispatch >= 2.00
+BuildRequires:	perl(Test::More)
 
 %description
 Log::Log4perl lets you remote-control and fine-tune the logging behaviour of
