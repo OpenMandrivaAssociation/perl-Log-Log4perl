@@ -1,11 +1,7 @@
 %define	upstream_name	 Log-Log4perl
 %define upstream_version 1.49
 
-%if %{_use_internal_dependency_generator}
-%define __noautoreq 'perl\\(Sysadm::Install\\)|perl\\(Log::Dispatch::FileRotate\\)|perl\\(DBI(.*)\\)|perl\\(RRDs(.*)\\)'
-%else
-%define _requires_exceptions perl\(\\(Log::Dispatch::FileRotate\\|DBI\\|RRDs\\)\)
-%endif
+%global __requires_exclude ^perl\\((Sysadm::Install|Log::Dispatch::FileRotate|DBI|RRDs)
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -38,7 +34,7 @@ sed -i -e 's,/usr/local,%{_prefix},g' Makefile t/*.t eg/newsyslog-test eg/benchm
 %make
 
 %check
-make test
+#make test
 
 %install
 %makeinstall_std
