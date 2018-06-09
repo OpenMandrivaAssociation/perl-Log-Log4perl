@@ -34,6 +34,7 @@ find lib -type f -exec chmod 644 {} \;
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
+sed -i -e 's,/usr/local,%{_prefix},g' Makefile t/*.t eg/newsyslog-test eg/benchmarks/simple
 %make
 
 %check
