@@ -34,7 +34,7 @@ sed -i -e 's,/usr/local,%{_prefix},g' Makefile t/*.t eg/newsyslog-test eg/benchm
 %make
 
 %check
-#make test
+make test
 
 %install
 %makeinstall_std
