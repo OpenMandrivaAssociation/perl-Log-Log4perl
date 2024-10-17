@@ -10,7 +10,7 @@ Summary:	Log4j implementation for Perl
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Log/%{upstream_name}-%{upstream_version}.tar.gz
 BuildRequires:	perl-devel
 BuildRequires:	perl-Log-Dispatch >= 2.00
