@@ -1,17 +1,17 @@
 %define	upstream_name	 Log-Log4perl
-%define upstream_version 1.49
+%define upstream_version 1.57
 
 %global __requires_exclude ^perl\\((Sysadm::Install|Log::Dispatch::FileRotate|DBI|RRDs)
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 Summary:	Log4j implementation for Perl
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Log/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/mschilli/log4perl
+Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETJ/Log-Log4perl-%{upstream_version}.tar.gz
 BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl-Log-Dispatch >= 2.00
