@@ -1,17 +1,15 @@
 %define	upstream_name	 Log-Log4perl
-%define upstream_version 1.57
-
 %global __requires_exclude ^perl\\((Sysadm::Install|Log::Dispatch::FileRotate|DBI|RRDs)
 
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.57
+Release:	2
 Summary:	Log4j implementation for Perl
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/mschilli/log4perl
-Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETJ/Log-Log4perl-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETJ/Log-Log4perl-%{version}.tar.gz
 BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl-Log-Dispatch >= 2.00
@@ -26,7 +24,7 @@ your system from the outside. It implements the widely popular (Java-based)
 Log4j logging package in pure Perl.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 find lib -type f -exec chmod 644 {} \;
 
 %build
