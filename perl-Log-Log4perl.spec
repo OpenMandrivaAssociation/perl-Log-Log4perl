@@ -2,8 +2,8 @@
 %global __requires_exclude ^perl\\((Sysadm::Install|Log::Dispatch::FileRotate|DBI|RRDs)
 
 Name:		perl-%{upstream_name}
-Version:	1.57
-Release:	2
+Version:	1.58
+Release:	1
 Summary:	Log4j implementation for Perl
 
 License:	GPL+ or Artistic
